@@ -1,2 +1,3 @@
 #!/bin/bash
 echo "New text for branch"
+echo "1"
