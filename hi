@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Hi there, this is my first git experience"
+echo "Wow, what if I change info?"
+echo "Once again"
