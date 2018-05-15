@@ -1,5 +1,2 @@
 #!/bin/bash
-echo "Hi there, this is my first git experience"
-echo "Wow, what if I change info?"
-echo "What if i replace this row with another"
-echo "Let's add some info for remote push"
+echo "New text for branch"
