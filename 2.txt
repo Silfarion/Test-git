@@ -9,13 +9,20 @@ function list()
 	echo "-all - display hostnames and IP addresses of all host in local network"
 	echo "-target=X.X.X.X - display open TCP ports of X.X.X.X address"
 }
-if [ -z "$1"] 
-then
-list
-else
--all) all;;
-*) "false";; 
 
+function target()
+{
+	nmap $1 $2 $3 $4 | awk  -F "." '{print $1}'
+}
+if [ -z "$1"]
+	then 
+		list ;
+	else
+		--all all
+#		--target "=" target ('$2') | awk -F "=" '{print $2}'
+		*) echo "false" ;;
+break
+fi
 #while [ -n "S1" ]
 #do
 #case "$1" in
