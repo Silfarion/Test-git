@@ -1,0 +1,26 @@
+#!/bin/bash
+function all()
+{
+	nmap -sP 10.3.2.0/24
+}
+
+function list()
+{
+	echo "-all - display hostnames and IP addresses of all host in local network"
+	echo "-target=X.X.X.X - display open TCP ports of X.X.X.X address"
+}
+if [ -z "$1"] 
+then
+list
+else
+-all) all;;
+*) "false";; 
+
+#while [ -n "S1" ]
+#do
+#case "$1" in
+#-all) all ;;
+#*) echo "false" ;;
+#esac
+#break
+#done
